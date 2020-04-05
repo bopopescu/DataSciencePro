@@ -1,0 +1,11 @@
+name=input("Enter the string: ")
+n= len(name)
+print(n)
+print(name[1:8])
+print(name[:8])
+print(name[3:])
+print(name[:13])
+print(name[:13])
+print(name[-4:])
+print(name[n-4:n+1])
+
