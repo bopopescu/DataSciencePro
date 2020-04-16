@@ -1,5 +1,5 @@
 print("Hello Python")
-a=10
+a=100
 b=20
 c=a+b
 print(c)
