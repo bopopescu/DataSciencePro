@@ -6,3 +6,4 @@ def table(x,i=1):
 
 x=int(input("Enter the number: "))
 print(table(x))
+

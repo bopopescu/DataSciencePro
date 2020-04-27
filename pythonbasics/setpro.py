@@ -6,7 +6,7 @@ set3.pop()
 print(set3)
 set3.pop()
 print(set3)
-set3.update(set2)
+print(set3.update(set2))
 print(set3)
 
 for x in set3:

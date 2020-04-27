@@ -21,20 +21,6 @@ def my_function3(**kid):
       print("His last name is " + kid["lname"])
 
 
-def tri_recursion(k):
-  if(k>0):
-    result = k+tri_recursion(k-1)
-
-  else:
-    result = 0
-  return result
-
-
-def recur_factorial(n):
-   if n == 1:
-       return n
-   else:
-       return n*recur_factorial(n-1)
 
 
 my_function("Emil", "Tobias", "linux ")
@@ -43,8 +29,7 @@ my_function3(fname = "Tobias", lname = "Refsnes")
 a = int(input("Enter baa range : "))
 
 print(isPrime(a))
-print(tri_recursion(6))
-print(recur_factorial(7))
+
 
 
 
