@@ -17,4 +17,4 @@ else:
     print("fun hours")
 for i in range(0,8):
     print(i)
-    time.sleep(1)
+    time.sleep(2)

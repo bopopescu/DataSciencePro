@@ -12,5 +12,5 @@ s=str(distros_dict)
 print(type(s))
 json_acceptable_string = s.replace("'", "\"")
 d = json.loads(json_acceptable_string)
-print("Image url: " ,d["avatar_url"])
+print("Image url: " ,d["login"])
 

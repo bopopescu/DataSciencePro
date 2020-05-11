@@ -13,10 +13,11 @@ z = re.search("\s", txt)
 print("The first white-space character is located at index:", z.start())
 t = re.split("\s", txt)
 print(t)
-p = re.search(r"\bn\w+", txt)
+p = re.search(r"\bA\w+", txt)
 print(p.span())
 email= "ajaychopra156@gmail.com"
 txt2="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$"
 a=re.search(txt2,email)
 print(a)
 
+text3="^((\+){1}91){1}[6-9]{1}[0-9]{9}$"

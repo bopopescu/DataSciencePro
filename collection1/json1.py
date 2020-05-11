@@ -17,5 +17,3 @@ with open("data.json", "w") as write_file:
 with open("data.json", "r") as read_file:
     b = json.load(read_file)
 print(b)
-print(json.dumps(b, indent=5, sort_keys=True))
-print(demjson.decode(b))
