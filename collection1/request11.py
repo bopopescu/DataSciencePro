@@ -1,7 +1,7 @@
 import requests
 import json
 
-x = requests.get('https://api.github.com/users/cmpundhir')
+x = requests.get('https://api.github.com/users/chopra247aj')
 print(x.text)
 with open("data2.json", "w") as write_file:
      json.dump(x.text,write_file)
