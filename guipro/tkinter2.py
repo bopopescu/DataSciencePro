@@ -17,8 +17,12 @@ def fun3():
 
 def fun4():
     messagebox.showinfo("Hello", "Yellow Button clicked")
+def chkbtnfun():
+    #chkbtn1.select()
+    print(checkvar1.get())
+    #chkbtn1.deselect()
 
-c = Canvas(top, bg="pink", height=720, width=720)
+c = Canvas(top, bg="yellow", height=720, width=720)
 
 b1 = Button(top, text=" Red  ", command=fun, activeforeground="red", activebackground="pink", pady=10, )
 
@@ -37,24 +41,24 @@ b3.place(x=110,y=10)
 
 b4.place(x=160,y=10)
 
-checkvar1 = IntVar()
+checkvar1 = StringVar()
 
-checkvar2 = IntVar()
+checkvar2 = StringVar()
 
-checkvar3 = IntVar()
+checkvar3 = StringVar()
 
-chkbtn1 = Checkbutton(top, text="C", variable=checkvar1, onvalue=1, offvalue=0, height=2, width=10)
+chkbtn1 = Checkbutton(top, text="C", variable=checkvar1, command=chkbtnfun, onvalue="C", offvalue="", height=2, width=10)
 
-chkbtn2 = Checkbutton(top, text="C++", variable=checkvar2, onvalue=1, offvalue=0, height=2, width=10)
+chkbtn2 = Checkbutton(top, text="C++", variable=checkvar2, onvalue="C++", offvalue="", height=2, width=10)
 
-chkbtn3 = Checkbutton(top, text="Java", variable=checkvar3, onvalue=1, offvalue=0, height=2, width=10)
+chkbtn3 = Checkbutton(top, text="Java", variable=checkvar3, onvalue="Java", offvalue="", height=2, width=10)
 
 chkbtn1.place(x=10,y=70)
 
 chkbtn2.place(x=10,y=120)
 
 chkbtn3.place(x=10,y=170)
-
 c.pack()
+
 
 top.mainloop()
