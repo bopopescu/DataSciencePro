@@ -20,6 +20,8 @@ def fun4():
 def chkbtnfun():
     #chkbtn1.select()
     print(checkvar1.get())
+    print(checkvar2.get())
+    print(checkvar3.get())
     #chkbtn1.deselect()
 
 c = Canvas(top, bg="yellow", height=720, width=720)
@@ -49,9 +51,9 @@ checkvar3 = StringVar()
 
 chkbtn1 = Checkbutton(top, text="C", variable=checkvar1, command=chkbtnfun, onvalue="C", offvalue="", height=2, width=10)
 
-chkbtn2 = Checkbutton(top, text="C++", variable=checkvar2, onvalue="C++", offvalue="", height=2, width=10)
+chkbtn2 = Checkbutton(top, text="C++", variable=checkvar2, command=chkbtnfun, onvalue="C++", offvalue="", height=2, width=10)
 
-chkbtn3 = Checkbutton(top, text="Java", variable=checkvar3, onvalue="Java", offvalue="", height=2, width=10)
+chkbtn3 = Checkbutton(top, text="Java", variable=checkvar3, command=chkbtnfun, onvalue="Java", offvalue="", height=2, width=10)
 
 chkbtn1.place(x=10,y=70)
 
