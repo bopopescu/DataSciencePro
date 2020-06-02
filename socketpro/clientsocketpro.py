@@ -1,8 +1,6 @@
 import socket
 
-
 s = socket.socket()
-
 
 port = 12345
 
