@@ -11,7 +11,7 @@ except socket.error as err:
 port = 80
 
 try:
-    host_ip = socket.gethostbyname('www.techninjaa.com')
+    host_ip = socket.gethostbyname('www.google.com')
 except socket.gaierror:
 
     # this means could not resolve the host
